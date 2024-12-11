@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Irrigation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Irrigation System</h1>
+    </header>
+    <main>
+        <!-- Section to display sensor data -->
+        <section class="sensor-data">
+            <h2>Sensor Data</h2>
+            <p>Soil Moisture: <span id="soil-moisture">Loading...</span>%</p>
+            <p>Light Intensity: <span id="light-intensity">Loading...</span>%</p>
+        </section>
+
+        <!-- Section to set moisture threshold -->
+        <section class="threshold-control">
+            <h2>Set Moisture Threshold</h2>
+            <input type="number" id="moisture-threshold" placeholder="Enter Threshold (0-100)" min="0" max="100">
+            <button id="set-threshold">Set Threshold</button>
+        </section>
+
+        <!-- Section to configure irrigation mode -->
+        <section class="irrigation-daytime">
+            <h2>Irrigation During Daytime</h2>
+            <select id="irrigation-daytime">
+                <option value="ON">ON</option>
+                <option value="OFF">OFF</option>
+            </select>
+            <button id="set-irrigation-mode">Set Mode</button>
+        </section>
+
+        <!-- Section to display pump status -->
+        <section class="pump-status">
+            <h2>Pump Status</h2>
+            <p>Current Pump State: <span id="pump-state">Unknown</span></p>
+        </section>
+
+        <!-- Section for voice assistant -->
+        <section class="voice-assistant">
+            <h2>Voice Assistant</h2>
+            <button id="start-recording">Start Voice Recording</button>
+            <p id="voice-feedback">Please click the button to start recording.</p>
+        </section>
+    </main>
+
+    <!-- Include required scripts -->
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

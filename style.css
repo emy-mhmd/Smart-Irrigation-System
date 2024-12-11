@@ -1,0 +1,104 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    margin-top: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 15px;
+}
+
+input, select {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:active {
+    background-color: #1e7e34;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.sensor-data span,
+.pump-status span {
+    font-weight: bold;
+}
+
+#start-recording {
+    background-color: #007bff;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#start-recording:hover {
+    background-color: #0056b3;
+}
+
+#start-recording:active {
+    background-color: #004085;
+}
+
+button:focus {
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+button:focus {
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
