@@ -1,7 +1,10 @@
 // MQTT Configuration
 const brokerURL = "ws://broker.hivemq.com:8000/mqtt"; // Public MQTT broker
-const client = mqtt.connect(brokerURL);
-
+const client = mqtt.connect(brokerURL, {
+    keepalive: 60,
+    reconnectPeriod: 5000, // Reconnect every 5 seconds
+    clean: true,
+});
 // MQTT Topics
 const topics = {
     soilMoisture: "smart_irrigation/soil_moisture",
